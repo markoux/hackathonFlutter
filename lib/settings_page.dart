@@ -42,26 +42,42 @@ class SettingsPageState extends State<SettingsPage> {
                   title: Text('Facebook'),
                   dense: true,
                   controlAffinity: ListTileControlAffinity.leading,
-                  value: false,
-                  onChanged: (value) {}),
+                  value: _facebook,
+                  onChanged: (value) {
+                    setState(() {
+                      _facebook = !_facebook;
+                    });
+                  }),
               CheckboxListTile(
                   title: Text('Twitter'),
                   dense: true,
                   controlAffinity: ListTileControlAffinity.leading,
-                  value: false,
-                  onChanged: (value) {}),
+                  value: _twitter,
+                  onChanged: (value) {
+                    setState(() {
+                      _twitter = !_twitter;
+                    });
+                  }),
               CheckboxListTile(
                   title: Text('Reddit'),
                   dense: true,
                   controlAffinity: ListTileControlAffinity.leading,
-                  value: false,
-                  onChanged: (value) {}),
+                  value: _reddit,
+                  onChanged: (value) {
+                    setState(() {
+                      _reddit = !_reddit;
+                    });
+                  }),
               CheckboxListTile(
                   title: Text('Meetup'),
                   dense: true,
                   controlAffinity: ListTileControlAffinity.leading,
-                  value: false,
-                  onChanged: (value) {}),
+                  value: _meetup,
+                  onChanged: (value) {
+                    setState(() {
+                      _meetup = !_meetup;
+                    });
+                  }),
             ],
           )),
     );

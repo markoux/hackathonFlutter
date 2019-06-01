@@ -15,9 +15,9 @@ class HomePageState extends State<HomePage>
   TabController _tabController;
 
   List<String> tabNames = const <String>[
-    'Page1',
-    'Page2',
-    'Page3',
+    'News Feed',
+    'Community',
+    'Tutorials',
   ];
 
   @override
@@ -71,13 +71,8 @@ class HomePageState extends State<HomePage>
         ),
         body: TabBarView(controller: _tabController, children: [
           NewsFeed(),
-          NewsFeed(),
-          NewsFeed(),
-        ]),floatingActionButton: FloatingActionButton(onPressed: () {
-          HttpUtils().getPosts().then((post) {
-            print("!");
-            print(post);
-          });
-    }),);
+          Container(),
+          Container()
+        ]));
   }
 }
