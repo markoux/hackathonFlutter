@@ -33,38 +33,45 @@ class HomePageState extends State<HomePage>
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
-      drawer: Drawer(
-        child: Container(),
-      ),
-      appBar: AppBar(
-        title: Container(
-            height: 30,
-            child: TextField(
-              decoration: InputDecoration(
-                  hintText: 'Search',
-                  labelStyle: TextStyle(textBaseline: TextBaseline.alphabetic),
-                  prefixIcon: Icon(Icons.search),
-                  isDense: true,
-                  filled: true,
-                  fillColor: Colors.white),
-            )),
-        bottom: TabBar(
-          isScrollable: false,
-          tabs: new List.generate(tabNames.length, (index) {
-            return new Tab(text: tabNames[index].toUpperCase());
-          }),
-          onTap: (i) {},
-          controller: _tabController,
+        drawer: Drawer(
+            child: ListView(
+          children: <Widget>[
+            ListTile(
+              leading: Icon(Icons.settings),
+              title: Text('Settings'),
+              onTap: () {
+                Navigator.of(context).pushNamed('/settings');
+              },
+            )
+          ],
+        )),
+        appBar: AppBar(
+          title: Container(
+              height: 30,
+              child: TextField(
+                decoration: InputDecoration(
+                    hintText: 'Search',
+                    labelStyle:
+                        TextStyle(textBaseline: TextBaseline.alphabetic),
+                    prefixIcon: Icon(Icons.search),
+                    isDense: true,
+                    filled: true,
+                    fillColor: Colors.white),
+              )),
+          bottom: TabBar(
+            isScrollable: false,
+            tabs: new List.generate(tabNames.length, (index) {
+              return new Tab(text: tabNames[index].toUpperCase());
+            }),
+            onTap: (i) {},
+            controller: _tabController,
+          ),
         ),
-      ),
-      body: TabBarView(controller: _tabController,
-          children: [
-        NewsFeed(),
-        NewsFeed(),
-        NewsFeed(),
-      ])
-    );
+        body: TabBarView(controller: _tabController, children: [
+          NewsFeed(),
+          NewsFeed(),
+          NewsFeed(),
+        ]));
   }
 }
