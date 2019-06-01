@@ -67,13 +67,7 @@ class NewsFeedWidgetState extends State {
                           setState(() {
                             this._favourite = !this._favourite;
                           });
-                        },),
-                        IconButton(
-                          icon: Icon(
-                            Icons.comment,
-                          ),
-                          onPressed: () {},
-                        )
+                        },)
                       ],
                     )
                   ],
