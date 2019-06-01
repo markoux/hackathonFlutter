@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'news_feed.dart';
+
 class HomePage extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
@@ -31,10 +33,7 @@ class HomePageState extends State<HomePage>
 
   @override
   Widget build(BuildContext context) {
-    final double screenWidth = MediaQuery
-        .of(context)
-        .size
-        .width;
+
     return Scaffold(
       drawer: Drawer(
         child: Container(),
@@ -56,14 +55,16 @@ class HomePageState extends State<HomePage>
           tabs: new List.generate(tabNames.length, (index) {
             return new Tab(text: tabNames[index].toUpperCase());
           }),
-          onTap: (i) {
-            FocusScope.of(context).requestFocus(FocusNode());
-          },
+          onTap: (i) {},
           controller: _tabController,
         ),
       ),
-      body: Container(
-      ),
+      body: TabBarView(controller: _tabController,
+          children: [
+        NewsFeed(),
+        NewsFeed(),
+        NewsFeed(),
+      ])
     );
   }
 }
