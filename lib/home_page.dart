@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'http_utils.dart';
 import 'news_feed.dart';
 
 class HomePage extends StatefulWidget {
@@ -72,6 +73,11 @@ class HomePageState extends State<HomePage>
           NewsFeed(),
           NewsFeed(),
           NewsFeed(),
-        ]));
+        ]),floatingActionButton: FloatingActionButton(onPressed: () {
+          HttpUtils().getPosts().then((post) {
+            print("!");
+            print(post);
+          });
+    }),);
   }
 }
