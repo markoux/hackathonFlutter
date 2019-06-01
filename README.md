@@ -19,9 +19,8 @@ The application has 3 main views:
 
 The sources of the gathered information can be selected from the configurations menu.
 
-TODO insert picture.
-
 There is also vote, search, sorting and filtering functionality.
+
 
 ## News Feed
 
@@ -41,11 +40,11 @@ Community means (mainly) a group of people, depending on the source, for example
 
 ## Tutorials
 
-The tutorials are mainly sorted, according to the user's self evaluated developer level.
+The tutorials are mainly sorted, according to the user's self evaluated developer level, "Easy", "Medium", or "Hard".
 
 ## Configurations
 
-The configurations menu spotted on TODO location, allow the user to, guess what... optimize the application's functionality, according to his preferences.
+The configurations menu spotted on top left of the screen, allows the user to optimize the application's functionality, according to user's preferences.
 
 ### Select Sources
 
@@ -53,7 +52,7 @@ A group of check-boxes, which will define which sources (APIs) should be used or
 * Stackoverflow
 * Meetup
 * Reddit
-* Google (TODO den exei posts auth h blakeia re axladia)
+* Google
 * Facebook
 * Twitter
 * Twitch
