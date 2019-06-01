@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-import 'package:flutterhackathon/post.dart';
-import 'package:flutterhackathon/token.dart';
+import 'package:flutterhackathon/model/post.dart';
+import 'package:flutterhackathon/model/token.dart';
 import 'package:http/http.dart' as http;
 
 class HttpUtils {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'http_utils.dart';
+import 'package:flutterhackathon/bloc/post_bloc.dart';
+import 'community_feed.dart';
 import 'news_feed.dart';
 
 class HomePage extends StatefulWidget {
@@ -23,6 +23,7 @@ class HomePageState extends State<HomePage>
   @override
   void initState() {
     _tabController = TabController(length: tabNames.length, vsync: this);
+    postBloc.getPosts(false);
     super.initState();
   }
 
@@ -71,7 +72,7 @@ class HomePageState extends State<HomePage>
         ),
         body: TabBarView(controller: _tabController, children: [
           NewsFeed(),
-          Container(),
+          CommunityFeed(),
           Container()
         ]));
   }
