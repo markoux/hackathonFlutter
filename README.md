@@ -18,9 +18,9 @@ The application has 3 main views:
 3. Tutorials
 
 
-![Meow](https://github.com/markoux/hackathonFlutter/blob/master/icons/screenshot1.png "Black and orange would be better...")
+![Meow](https://github.com/markoux/hackathonFlutter/blob/master/icons/screenshot1.JPG "Black and orange would be better...")
 
-![Meow](https://github.com/markoux/hackathonFlutter/blob/master/icons/screenshot2.png "Black and orange would be better...")
+![Meow](https://github.com/markoux/hackathonFlutter/blob/master/icons/screenshot2.JPG "Black and orange would be better...")
 
 
 The sources of the gathered information can be selected from the configurations menu.
