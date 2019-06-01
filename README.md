@@ -3,7 +3,7 @@
 Hackathon 2019
 
 
-![Meow](./icons/flutterhublogo.png "Black and orange would be better...")
+![Meow](https://github.com/markoux/hackathonFlutter/blob/master/icons/difficulty_ui/flutterhublogo.png "Black and orange would be better...")
 
 
 ## Introduction
