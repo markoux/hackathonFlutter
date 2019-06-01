@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterhackathon/post.dart';
+import 'package:flutterhackathon/model/post.dart';
 
 class NewsFeedWidget extends StatefulWidget {
   final Statuses statuses;

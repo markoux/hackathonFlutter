@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'home_page.dart';
-import 'settings_page.dart';
+import 'package:flutterhackathon/pages/home_page.dart';
+import 'package:flutterhackathon/pages/settings_page.dart';
 
 void main() => runApp(MyApp());
 
